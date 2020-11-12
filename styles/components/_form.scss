@@ -1,0 +1,55 @@
+.input-group {
+  $parent: &;
+  margin-bottom: 20px;
+  position: relative;
+  &__text {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    line-height: $input-height;
+    padding: 0 5px;
+    transition: font-size 200ms ease-in-out;
+      line-height: 200ms ease-in-out;
+    color: $border-color;
+  }
+  &__input {
+    width: 100%;
+    height: $input-height;
+    padding: 0 10px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    outline: none;
+    // &:valid,
+    &:not(:placeholder-shown),
+    &:focus {
+      + #{$parent}__text {
+        top: -5px;
+        line-height: 10px;
+        background-color: white;
+        font-size: 0.8em;
+      }
+    }
+    &:focus {
+      border: 1px solid $border-color;
+      + #{$parent}__text {
+        color: $primary-color;
+      }
+    }
+  }
+}
+button {
+  height: $button-height;
+  width: 100%;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: $border-radius;
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+  }
+}

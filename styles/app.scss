@@ -1,0 +1,48 @@
+@import "./variables";
+
+@import "./components/form";
+@import "./components/utilities";
+@import "./components/tabs";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: {
+    family: $primary-font;
+    size: 14px;
+  }
+}
+h1 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  + p {
+    opacity: 0.5;
+    margin-bottom: 30px;
+  }
+}
+p {
+  margin: 0 0 20px 0;
+}
+a {
+  color: $primary-color;
+}
+.wrapper {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(220deg, rgba(2,0,36,1) 0%, rgba(0,0,255,1) 46%, rgba(0,212,255,1) 100%); 
+}
+.container {
+  background-color: white;
+  border: 1px solid $border-color;
+  max-width: 400px;
+  min-width: 320px;
+  width: 100%;
+}

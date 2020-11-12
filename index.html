@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/app.css">
+  <title>Sass - First Step</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">      
+      <div class="tabs">
+        <input class="tabs__button" type="radio" name="radioAction" id="radioSignIn" checked>
+        <label class="tabs__text" for="radioSignIn">Sign in</label>
+        <div class="tabs__content">
+          <h1>New Accout</h1>
+          <p>Get back on your track</p>
+          <form action="">
+            <div class="input-group">
+              <input class="input-group__input" type="text" name="username" placeholder="&nbsp;" id="username" required autocomplete="off">
+              <label class="input-group__text" for="username">Username</label>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input" type="password" name="password" placeholder="&nbsp;" id="password" required>
+              <label class="input-group__text" for="password">Password</label>
+            </div>
+            <div class="flex-space-between">
+              <label>
+                <input type="checkbox"> Remember Me
+              </label>
+              <p>
+                <a href="#">Forgot Password?</a>
+              </p>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <input class="tabs__button" type="radio" name="radioAction" id="radioSignUp">
+        <label class="tabs__text" for="radioSignUp">Sign Up</label>
+        <div class="tabs__content">
+          <h1>Welcome Back</h1>
+          <form action="">
+            <div class="input-group">
+              <input class="input-group__input" type="email" name="email" placeholder="&nbsp;" id="email" required autocomplete="off">
+              <label class="input-group__text" for="email">Email</label>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input" type="password" name="passwordSignUp" placeholder="&nbsp;" id="passwordSignUp" required>
+              <label class="input-group__text" for="passwordSignUp">Password</label>
+            </div>
+            <p>
+              <small>By submitting this form, you confirm that you have read and a greed to the <a href="#">Terms and Condition</a>.</small>
+            </p>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
